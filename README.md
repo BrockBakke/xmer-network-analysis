@@ -71,6 +71,8 @@ If you use this repository in your research or publications, please cite:
 Hongtae Park, Brock Kingstad-Bakke, Thomas Cleven, Myunghwan Jung, Yoshihiro Kawaoka, and M. Suresh  
 *Journal of Virology (in review)*  
 
+[DOI](https://zenodo.org/badge/901558465.svg)](https://doi.org/10.5281/zenodo.14398864)
+
 GitHub Repository: [BrockBakke/xmer-network-analysis](https://github.com/BrockBakke/xmer-network-analysis)
 
 ---
