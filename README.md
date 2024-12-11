@@ -62,6 +62,19 @@ Here’s a preview of the graph:
 
 ---
 
+---
+## Citation
+
+If you use this repository in your research or publications, please cite:
+
+**Diversifying T Cell Responses: Safeguarding Against Pandemic Influenza with Mosaic Nucleoprotein**  
+Hongtae Park, Brock Kingstad-Bakke, Thomas Cleven, Myunghwan Jung, Yoshihiro Kawaoka, and M. Suresh  
+*Journal of Virology (in review)*  
+
+GitHub Repository: [BrockBakke/xmer-network-analysis](https://github.com/BrockBakke/xmer-network-analysis)
+
+---
+
 ## Contact
 
 For questions or feedback, contact me.
