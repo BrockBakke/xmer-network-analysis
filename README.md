@@ -62,21 +62,22 @@ Here’s a preview of the graph:
 
 ---
 
----
+# Xmer Network Analysis
+
+[![DOI](https://zenodo.org/badge/901558465.svg)](https://doi.org/10.5281/zenodo.14398864)
+
 ## Citation
 
-If you use this repository in your research or publications, please cite:
+If you use this repository in your work, please cite it as:
 
-**Diversifying T Cell Responses: Safeguarding Against Pandemic Influenza with Mosaic Nucleoprotein**  
-Hongtae Park, Brock Kingstad-Bakke, Thomas Cleven, Myunghwan Jung, Yoshihiro Kawaoka, and M. Suresh  
-*Journal of Virology (in review)*  
+>**Diversifying T Cell Responses: Safeguarding Against Pandemic Influenza with Mosaic Nucleoprotein**  
+>Hongtae Park, Brock Kingstad-Bakke, Thomas Cleven, Myunghwan Jung, Yoshihiro Kawaoka, and M. Suresh  
+>*Journal of Virology (in review)*  
 
-[DOI](https://zenodo.org/badge/901558465.svg)](https://doi.org/10.5281/zenodo.14398864)
 
-GitHub Repository: [BrockBakke/xmer-network-analysis](https://github.com/BrockBakke/xmer-network-analysis)
 
 ---
 
 ## Contact
 
-For questions or feedback, contact me.
+For questions or feedback, contact me through github.
