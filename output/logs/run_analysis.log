@@ -1,0 +1,55 @@
+Starting pipeline...
+Global constants:
+  xmer_l =  9 
+  unique_threshhold =  3 
+
+Step 1: Reading and filtering sequences...
+Number of sequences before filtering: 7422 
+Number of sequences after filtering: 7050 
+
+Step 2: Extracting and filtering x-mers...
+Total unique  9 -mers found that appear in at least  3  sequences: 8828 
+
+Step 3: Adding external sequences...
+Number of sequences after adding external sequences: 7057 
+
+Step 4: Parsing metadata...
+
+Step 5: Extracting and assigning years...
+Number of entries with invalid years: 6 
+                                                                                                                                                                                                                                                                                                              Strain_Name
+gb:DQ376746|ncbiId:ABD35686.1|UniProtKB:Q0QH39|Organism:Influenza A virus (A/chicken/Taiwan/0320/02(H6N1))|Strain Name:A/chicken/Taiwan/0320/02)H6N1)|Protein Name:NP Nucleoprotein|Gene Symbol:NP|Segment:5|Subtype:H6N1|Host:Chicken                                                     A/chicken/Taiwan/0320/02)H6N1)
+gb:CY076112|ncbiId:ADP07123.1|UniProtKB:E3JMC8|Organism:Influenza A virus (A/common murre/Oregon/20361-002/2007(H12N5))|Strain Name:A/common murre/Oregon/20361-002/2007Segment: 1 |Protein Name:NP Nucleoprotein|Gene Symbol:NP|Segment:5|Subtype:H12N5|Host:Common Murre A/common murre/Oregon/20361-002/2007Segment: 1
+gb:CY147393|ncbiId:AGQ47839.1|UniProtKB:S5FZP6|Organism:Influenza A virus (A/Georgia/JY2/unknown(H3N2))|Strain Name:A/Georgia/JY2/unknown|Protein Name:NP Nucleoprotein|Gene Symbol:NP|Segment:5|Subtype:H3N2|Host:Human                                                                            A/Georgia/JY2/unknown
+gb:CY146820|ncbiId:AGO00341.1|UniProtKB:R9WNG8|Organism:Influenza A virus (A/PAL/unknown(H1N2))|Strain Name:A/PAL/unknown|Protein Name:NP Nucleoprotein|Gene Symbol:NP|Segment:5|Subtype:H1N2|Host:Human                                                                                                    A/PAL/unknown
+gb:AF389119|ncbiId:AAM75159.1|UniProtKB:P03466|Organism:Influenza A virus (A/Puerto Rico/8/34/Mount Sinai(H1N1))|Strain Name:A/Puerto Rico/8/34/Mount Sinai|Protein Name:NP Nucleoprotein|Gene Symbol:NP|Segment:5|Subtype:H1N1|Host:Human                                                 A/Puerto Rico/8/34/Mount Sinai
+gb:CY087421|ncbiId:AEA03859.1|UniProtKB:F2NZU1|Organism:Influenza A virus (A/Uganda/MUWRP-016/2008(H3N2))|Strain Name:A/Uganda/MUWRP-016/|Protein Name:NP Nucleoprotein|Gene Symbol:NP|Segment:5|Subtype:H3N2|Host:Human                                                                              A/Uganda/MUWRP-016/
+                                                                                                                                                                                                                                                                           Year
+gb:DQ376746|ncbiId:ABD35686.1|UniProtKB:Q0QH39|Organism:Influenza A virus (A/chicken/Taiwan/0320/02(H6N1))|Strain Name:A/chicken/Taiwan/0320/02)H6N1)|Protein Name:NP Nucleoprotein|Gene Symbol:NP|Segment:5|Subtype:H6N1|Host:Chicken                                      261
+gb:CY076112|ncbiId:ADP07123.1|UniProtKB:E3JMC8|Organism:Influenza A virus (A/common murre/Oregon/20361-002/2007(H12N5))|Strain Name:A/common murre/Oregon/20361-002/2007Segment: 1 |Protein Name:NP Nucleoprotein|Gene Symbol:NP|Segment:5|Subtype:H12N5|Host:Common Murre   NA
+gb:CY147393|ncbiId:AGQ47839.1|UniProtKB:S5FZP6|Organism:Influenza A virus (A/Georgia/JY2/unknown(H3N2))|Strain Name:A/Georgia/JY2/unknown|Protein Name:NP Nucleoprotein|Gene Symbol:NP|Segment:5|Subtype:H3N2|Host:Human                                                     NA
+gb:CY146820|ncbiId:AGO00341.1|UniProtKB:R9WNG8|Organism:Influenza A virus (A/PAL/unknown(H1N2))|Strain Name:A/PAL/unknown|Protein Name:NP Nucleoprotein|Gene Symbol:NP|Segment:5|Subtype:H1N2|Host:Human                                                                     NA
+gb:AF389119|ncbiId:AAM75159.1|UniProtKB:P03466|Organism:Influenza A virus (A/Puerto Rico/8/34/Mount Sinai(H1N1))|Strain Name:A/Puerto Rico/8/34/Mount Sinai|Protein Name:NP Nucleoprotein|Gene Symbol:NP|Segment:5|Subtype:H1N1|Host:Human                                   NA
+gb:CY087421|ncbiId:AEA03859.1|UniProtKB:F2NZU1|Organism:Influenza A virus (A/Uganda/MUWRP-016/2008(H3N2))|Strain Name:A/Uganda/MUWRP-016/|Protein Name:NP Nucleoprotein|Gene Symbol:NP|Segment:5|Subtype:H3N2|Host:Human                                                     NA
+Updated Year for strain: A/chicken/Taiwan/0320/02)H6N1) to 2002 
+Updated Year for strain: A/common murre/Oregon/20361-002/2007Segment: 1 to 2007 
+Updated Year for strain: A/Georgia/JY2/unknown to 1934 
+Updated Year for strain: A/PAL/unknown to 1934 
+Updated Year for strain: A/Puerto Rico/8/34/Mount Sinai to 1934 
+Updated Year for strain: A/Uganda/MUWRP-016/ to 2016 
+
+Step 6: Computing similarity and performing clustering...
+
+Step 7: Selecting representative sequences...
+Added the following external sequences as representatives: H5N1 A/Texas/37/2024 
+
+Step 8: Calculating network of representative sequences...
+
+Step 9: Merging host and subtype information...
+
+Step 10: Plotting and saving network graph...
+
+Pipeline completed successfully.
+Results:
+  Network graph saved to: output/figures/network_graph1.svg
+  Log saved to:  output/logs/run_analysis.log 

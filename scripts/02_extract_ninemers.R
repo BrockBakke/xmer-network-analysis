@@ -1,48 +1,30 @@
 #############################################
-# Helper Functions
+# Functions for Extracting and Filtering x-mers
 #############################################
 
-extract_xmer <- function(seq, l) {
-  seq_length <- nchar(seq)
-  if (seq_length >= l) {
-    # Generate substrings of length l
-    start_positions <- 1:(seq_length - l + 1)
-    substring(seq, start_positions, start_positions + l - 1)
-  } else {
-    # Return empty if the sequence is too short
-    character(0)
-  }
-}
-
-
-# Function to compute the Jaccard similarity matrix, either on CPU or GPU.
-# method = "cpu": use proxy::simil()
-# method = "gpu": use GPU-based computation
-compute_jaccard_similarity <- function(mat, method = "gpu") {
-  if (method == "cpu") {
-    # CPU-based computation using proxy::simil
-    # mat must be a standard matrix
-    sim <- proxy::simil(as.matrix(mat), method = "Jaccard")
-    similarity_matrix <- as.matrix(sim)
-  } else if (method == "gpu") {
-    # GPU-based computation
-    X_gpu <- gpuMatrix(mat, type = "float")
-    intersection_gpu <- tcrossprod(X_gpu)
-    intersection_mat <- as.matrix(intersection_gpu)
-    
-    row_sums <- rowSums(mat)
-    n <- nrow(mat)
-    similarity_matrix <- matrix(0, n, n)
-    
-    for (i in seq_len(n)) {
-      union_counts <- row_sums[i] + row_sums - intersection_mat[i, ]
-      valid <- union_counts > 0
-      similarity_matrix[i, valid] <- intersection_mat[i, valid] / union_counts[valid]
-      similarity_matrix[i, i] <- 1
-    }
-  } else {
-    stop("Invalid method. Choose 'cpu' or 'gpu'.")
-  }
+extract_and_filter_ninemers <- function(df_filtered) {
+  ninemers_list <- lapply(df_filtered$Sequence, function(seq) {
+    unique(extract_xmer(seq, xmer_l))
+  })
   
-  return(similarity_matrix)
+  ninemer_counts <- table(unlist(ninemers_list))
+  unique_ninemers <- names(ninemer_counts[ninemer_counts >= unique_threshhold])
+  
+  num_unique_ninemers <- length(unique_ninemers)
+  cat("Total unique ", xmer_l, "-mers found that appear in at least ", unique_threshhold, " sequences:", num_unique_ninemers, "\n")
+  
+  sequence_presence_matrix <- matrix(
+    0L,
+    nrow = nrow(df_filtered),
+    ncol = num_unique_ninemers,
+    dimnames = list(df_filtered$Header, unique_ninemers)
+  )
+  
+  all_ninemers <- unlist(ninemers_list)
+  sequence_idx <- rep(seq_along(ninemers_list), lengths(ninemers_list))
+  indices <- match(all_ninemers, unique_ninemers, nomatch = 0)
+  valid <- indices > 0
+  sequence_presence_matrix[cbind(sequence_idx[valid], indices[valid])] <- 1L
+  
+  return(list(matrix = sequence_presence_matrix, unique_ninemers = unique_ninemers))
 }
