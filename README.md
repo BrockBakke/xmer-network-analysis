@@ -10,7 +10,7 @@ Welcome to the **Xmer Network Analysis** pipeline! This repository provides tool
 
 1. **Clone the repository**:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/BrockBakke/xmer-network-analysis.git
    cd xmer-network-analysis
    ```
 
@@ -64,4 +64,4 @@ Here’s a preview of the graph:
 
 ## Contact
 
-For questions or feedback, contact [your email or GitHub handle].
+For questions or feedback, contact me.
