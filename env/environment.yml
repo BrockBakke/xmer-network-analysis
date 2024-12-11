@@ -1,0 +1,17 @@
+name: xmer-network-env
+channels:
+  - conda-forge
+dependencies:
+  - r-base=4.3.2
+  - r-essentials
+  - r-biostrings
+  - r-dplyr
+  - r-igraph
+  - r-ggraph
+  - r-ggplot2
+  - r-viridis
+  - r-proxy
+  - r-gpuR
+  - r-fastmatch
+  - r-svglite
+  - r-matrix
