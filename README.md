@@ -70,7 +70,7 @@ Here’s a preview of the graph:
 
 If you use this repository in your work, please cite it as:
 
->**Diversifying T-cell responses: safeguarding against pandemic influenza with mosaic nucleoprotein. 
+>Diversifying T-cell responses: safeguarding against pandemic influenza with mosaic nucleoprotein. 
 >Park H, Kingstad-Bakke B, Cleven T, Jung M, Kawaoka Y, Suresh M.
 >J Virol. 2025 Mar 18;99(3):e0086724. doi: 10.1128/jvi.00867-24. Epub 2025 Feb 3. PMID: 39898643; PMCID: PMC11915837.
 
